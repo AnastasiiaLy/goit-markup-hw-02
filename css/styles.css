@@ -1,0 +1,112 @@
+:root {
+	--brand-color: #4d5ae5;
+}
+* {
+	text-decoration: none;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+body {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Roboto", Segoe UI, Oxygen, Ubuntu, Cantarell, "Open Sans",
+		"Helvetica Neue", sans-serif;
+	color: #4d5ae5;
+}
+
+h2 {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 36px;
+	line-height: 40px;
+	color: #2e2f42;
+}
+
+h3 {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 24px;
+	color: #2e2f42;
+}
+
+p {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #434455;
+}
+
+.webstudio {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: inherit;
+}
+.web-studio {
+	color: #2e2f42;
+}
+
+.navigation-list {
+	list-style: none;
+	color: #2e2f42;
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.navigation {
+	color: #2e2f42;
+}
+
+.navigation:hover,
+.navigation:focus {
+	color: #434455;
+}
+.navigation:active {
+	color: #4d5ae5;
+}
+
+.navigation:active {
+}
+
+/* Footer */
+.contact-list {
+	list-style: none;
+}
+.contact-item {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #434455;
+}
+.contact-item:hover,
+.contact-item:focus {
+	color: inherit;
+}
+
+.footer-description {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #e7e9fc;
+	width: 264px;
+	height: 72px;
+	left: 156px;
+	top: 2421px;
+}
