@@ -1,61 +1,23 @@
 :root {
 	--brand-color: #4d5ae5;
+	--secondary-color: #2e2f42;
+	--success-color: #31d0aa;
+	--maintext-color: #434455;
+	--helpertext-color: #8e8f99;
+	accent-color: #e7e9fc;
+	background-color: #f4f4fd;
 }
 * {
 	text-decoration: none;
-}
-
-ul,
-ol {
 	list-style: none;
 }
 
 body {
 	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Roboto", Segoe UI, Oxygen, Ubuntu, Cantarell, "Open Sans",
 		"Helvetica Neue", sans-serif;
-	color: #4d5ae5;
+	color: var(--brand-color);
 }
-
-h2 {
-	font-family: "Roboto";
-	font-style: normal;
-	font-weight: 600;
-	font-size: 36px;
-	line-height: 40px;
-	color: #2e2f42;
-}
-
-h3 {
-	font-family: "Roboto";
-	font-style: normal;
-	font-weight: 600;
-	font-size: 20px;
-	line-height: 24px;
-	color: #2e2f42;
-}
-
-p {
-	font-family: "Roboto";
-	font-style: normal;
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 24px;
-	color: #434455;
-}
-
-.webstudio {
-	font-family: "Raleway";
-	font-style: normal;
-	font-weight: 800;
-	font-size: 18px;
-	line-height: 24px;
-	text-transform: uppercase;
-	color: inherit;
-}
-.web-studio {
-	color: #2e2f42;
-}
-
+/* Navigation */
 .navigation-list {
 	list-style: none;
 	color: #2e2f42;
@@ -64,6 +26,7 @@ p {
 	font-weight: 600;
 	font-size: 16px;
 	line-height: 24px;
+	letter-spacing: 0.02em;
 }
 
 .navigation {
@@ -75,13 +38,9 @@ p {
 	color: #434455;
 }
 .navigation:active {
-	color: #4d5ae5;
+	color: var(--brand-color);
 }
-
-.navigation:active {
-}
-
-/* Footer */
+/* Contacts */
 .contact-list {
 	list-style: none;
 }
@@ -92,10 +51,110 @@ p {
 	font-size: 16px;
 	line-height: 24px;
 	color: #434455;
+	letter-spacing: 0.02em;
 }
 .contact-item:hover,
 .contact-item:focus {
 	color: inherit;
+}
+.contact-item:active {
+	color: var(--brand-color);
+}
+
+/* Hero */
+.hero-section {
+	width: 1440px;
+	height: 603px;
+	background-color: #2e2f42;
+}
+.hero {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 56px;
+	line-height: 60px;
+	letter-spacing: 0.02em;
+	color: #ffffff;
+}
+
+/* Order button */
+.order-button {
+	border: none;
+	background-color: var(--brand-color);
+	color: #fff;
+}
+
+.order-button:active {
+	background-color: #404bbf;
+	color: #fff;
+}
+/* Advantages */
+.advantages-item {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 24px;
+	color: #2e2f42;
+}
+.advantages-text {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.02em;
+	color: #434455;
+}
+h2 {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 36px;
+	line-height: 40px;
+	color: #2e2f42;
+	letter-spacing: 0.02em;
+}
+/* Team */
+.worker {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 24px;
+	letter-spacing: 0.02em;
+	color: #2e2f42;
+}
+.position {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.02em;
+	color: #434455;
+}
+
+/* Footer */
+
+/* Logo */
+.webstudio {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: inherit;
+}
+.footer-studio {
+	color: #f4f4fd;
+}
+
+.footer {
+	width: 1440px;
+	height: 310px;
+	background-color: #2e2f42;
 }
 
 .footer-description {
@@ -109,4 +168,45 @@ p {
 	height: 72px;
 	left: 156px;
 	top: 2421px;
+}
+
+/* Profile page */
+
+/* Filters */
+
+.button {
+	border: 1px solid #e7e9fc;
+	background-color: #f4f4fd;
+	color: inherit;
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.04em;
+}
+.button:hover,
+.button:focus {
+	color: #fff;
+	background-color: #4d5ae5;
+}
+
+/* Options */
+.options-item {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 24px;
+	letter-spacing: 0.02em;
+	color: #2e2f42;
+}
+.options-type {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.02em;
+	color: #434455;
 }
