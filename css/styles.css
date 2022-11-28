@@ -4,8 +4,8 @@
 	--success-color: #31d0aa;
 	--maintext-color: #434455;
 	--helpertext-color: #8e8f99;
-	accent-color: #e7e9fc;
-	background-color: #f4f4fd;
+	--accent-color: #e7e9fc;
+	--background-color: #f4f4fd;
 }
 * {
 	text-decoration: none;
@@ -15,42 +15,50 @@
 body {
 	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Roboto", Segoe UI, Oxygen, Ubuntu, Cantarell, "Open Sans",
 		"Helvetica Neue", sans-serif;
+	font-style: normal;
 	color: var(--brand-color);
+}
+
+/* Logo */
+.logo {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 1.3;
+	text-transform: uppercase;
+}
+.part-logo {
+	color: var(--secondary-color);
 }
 /* Navigation */
 .navigation-list {
-	list-style: none;
-	color: #2e2f42;
-	font-family: "Roboto";
+	color: var(--secondary-color);
 	font-style: normal;
 	font-weight: 600;
 	font-size: 16px;
-	line-height: 24px;
+	line-height: 1.5;
 	letter-spacing: 0.02em;
 }
 
 .navigation {
-	color: #2e2f42;
+	color: var(--secondary-color);
 }
 
 .navigation:hover,
 .navigation:focus {
-	color: #434455;
+	color: var(--maintext-color);
 }
 .navigation:active {
 	color: var(--brand-color);
 }
-/* Contacts */
-.contact-list {
-	list-style: none;
-}
+
 .contact-item {
-	font-family: "Roboto";
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
-	line-height: 24px;
-	color: #434455;
+	line-height: 1.5;
+	color: var(--maintext-color);
 	letter-spacing: 0.02em;
 }
 .contact-item:hover,
@@ -65,14 +73,13 @@ body {
 .hero-section {
 	width: 1440px;
 	height: 603px;
-	background-color: #2e2f42;
+	background-color: var(--secondary-color);
 }
 .hero {
-	font-family: "Roboto";
 	font-style: normal;
 	font-weight: 600;
 	font-size: 56px;
-	line-height: 60px;
+	line-height: 1;
 	letter-spacing: 0.02em;
 	color: #ffffff;
 }
@@ -82,6 +89,7 @@ body {
 	border: none;
 	background-color: var(--brand-color);
 	color: #fff;
+	cursor: pointer;
 }
 
 .order-button:active {
@@ -90,49 +98,40 @@ body {
 }
 /* Advantages */
 .advantages-item {
-	font-family: "Roboto";
 	font-style: normal;
 	font-weight: 600;
 	font-size: 20px;
-	line-height: 24px;
-	color: #2e2f42;
+	line-height: 1.2;
+	color: var(--secondary-color);
 }
 .advantages-text {
-	font-family: "Roboto";
-	font-style: normal;
-	font-weight: 400;
 	font-size: 16px;
-	line-height: 24px;
+	line-height: 1.5;
 	letter-spacing: 0.02em;
-	color: #434455;
+	color: var(--maintext-color);
 }
 h2 {
-	font-family: "Roboto";
 	font-style: normal;
 	font-weight: 600;
 	font-size: 36px;
-	line-height: 40px;
-	color: #2e2f42;
+	line-height: 1.1;
+	color: var(--secondary-color);
 	letter-spacing: 0.02em;
 }
 /* Team */
 .worker {
-	font-family: "Roboto";
 	font-style: normal;
 	font-weight: 600;
 	font-size: 20px;
-	line-height: 24px;
+	line-height: 1.2;
 	letter-spacing: 0.02em;
-	color: #2e2f42;
+	color: var(--secondary-color);
 }
 .position {
-	font-family: "Roboto";
-	font-style: normal;
-	font-weight: 400;
 	font-size: 16px;
-	line-height: 24px;
+	line-height: 1.5;
 	letter-spacing: 0.02em;
-	color: #434455;
+	color: var(--maintext-color);
 }
 
 /* Footer */
@@ -143,26 +142,23 @@ h2 {
 	font-style: normal;
 	font-weight: 800;
 	font-size: 18px;
-	line-height: 24px;
+	line-height: 1.3;
 	text-transform: uppercase;
 	color: inherit;
 }
 .footer-studio {
-	color: #f4f4fd;
+	color: var(--background-color);
 }
 
 .footer {
 	width: 1440px;
 	height: 310px;
-	background-color: #2e2f42;
+	background-color: var(--secondary-color);
 }
 
 .footer-description {
-	font-family: "Roboto";
-	font-style: normal;
-	font-weight: 400;
 	font-size: 16px;
-	line-height: 24px;
+	line-height: 1.5;
 	color: #e7e9fc;
 	width: 264px;
 	height: 72px;
@@ -176,14 +172,15 @@ h2 {
 
 .button {
 	border: 1px solid #e7e9fc;
-	background-color: #f4f4fd;
+	background-color: var(--background-color);
 	color: inherit;
 	font-family: "Roboto";
 	font-style: normal;
 	font-weight: 600;
 	font-size: 16px;
-	line-height: 24px;
+	line-height: 1.5;
 	letter-spacing: 0.04em;
+	cursor: pointer;
 }
 .button:hover,
 .button:focus {
@@ -193,20 +190,16 @@ h2 {
 
 /* Options */
 .options-item {
-	font-family: "Roboto";
 	font-style: normal;
 	font-weight: 600;
 	font-size: 20px;
-	line-height: 24px;
+	line-height: 1.2;
 	letter-spacing: 0.02em;
-	color: #2e2f42;
+	color: var(--secondary-color);
 }
 .options-type {
-	font-family: "Roboto";
-	font-style: normal;
-	font-weight: 400;
 	font-size: 16px;
-	line-height: 24px;
+	line-height: 1.5;
 	letter-spacing: 0.02em;
-	color: #434455;
+	color: var(--maintext-color);
 }
