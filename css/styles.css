@@ -6,9 +6,13 @@
 	--helpertext-color: #8e8f99;
 	--accent-color: #e7e9fc;
 	--background-color: #f4f4fd;
+	--white-color: #fff;
 }
-* {
+
+.link {
 	text-decoration: none;
+}
+.list {
 	list-style: none;
 }
 
@@ -17,12 +21,12 @@ body {
 		"Helvetica Neue", sans-serif;
 	font-style: normal;
 	color: var(--brand-color);
+	background-color: var(--white-color);
 }
 
 /* Logo */
 .logo {
-	font-family: "Raleway";
-	font-style: normal;
+	font-family: "Raleway", sans-serif;
 	font-weight: 800;
 	font-size: 18px;
 	line-height: 1.3;
@@ -34,8 +38,7 @@ body {
 /* Navigation */
 .navigation-list {
 	color: var(--secondary-color);
-	font-style: normal;
-	font-weight: 600;
+	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
@@ -54,7 +57,6 @@ body {
 }
 
 .contact-item {
-	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 1.5;
@@ -71,35 +73,45 @@ body {
 
 /* Hero */
 .hero-section {
-	width: 1440px;
-	height: 603px;
 	background-color: var(--secondary-color);
 }
 .hero {
-	font-style: normal;
-	font-weight: 600;
+	font-weight: 500;
 	font-size: 56px;
 	line-height: 1;
 	letter-spacing: 0.02em;
-	color: #ffffff;
+	color: var(--white-color);
 }
 
 /* Order button */
 .order-button {
 	border: none;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 1.2;
 	background-color: var(--brand-color);
-	color: #fff;
+	color: var(--white-color);
 	cursor: pointer;
 }
 
 .order-button:active {
 	background-color: #404bbf;
-	color: #fff;
+	color: var(--white-color);
 }
 /* Advantages */
+
+.advantages,
+.team,
+.works {
+	font-weight: 500;
+	font-size: 36px;
+	line-height: 1.1;
+	color: var(--secondary-color);
+	letter-spacing: 0.02em;
+}
+
 .advantages-item {
-	font-style: normal;
-	font-weight: 600;
+	font-weight: 500;
 	font-size: 20px;
 	line-height: 1.2;
 	color: var(--secondary-color);
@@ -110,18 +122,10 @@ body {
 	letter-spacing: 0.02em;
 	color: var(--maintext-color);
 }
-h2 {
-	font-style: normal;
-	font-weight: 600;
-	font-size: 36px;
-	line-height: 1.1;
-	color: var(--secondary-color);
-	letter-spacing: 0.02em;
-}
+
 /* Team */
 .worker {
-	font-style: normal;
-	font-weight: 600;
+	font-weight: 500;
 	font-size: 20px;
 	line-height: 1.2;
 	letter-spacing: 0.02em;
@@ -138,8 +142,7 @@ h2 {
 
 /* Logo */
 .webstudio {
-	font-family: "Raleway";
-	font-style: normal;
+	font-family: "Raleway", sans-serif;
 	font-weight: 800;
 	font-size: 18px;
 	line-height: 1.3;
@@ -152,18 +155,14 @@ h2 {
 
 .footer {
 	width: 1440px;
-	height: 310px;
 	background-color: var(--secondary-color);
 }
 
 .footer-description {
 	font-size: 16px;
 	line-height: 1.5;
-	color: #e7e9fc;
+	color: var(--accent-color);
 	width: 264px;
-	height: 72px;
-	left: 156px;
-	top: 2421px;
 }
 
 /* Profile page */
@@ -171,12 +170,11 @@ h2 {
 /* Filters */
 
 .button {
-	border: 1px solid #e7e9fc;
+	border: 1px solid var(--accent-color);
 	background-color: var(--background-color);
 	color: inherit;
 	font-family: "Roboto";
-	font-style: normal;
-	font-weight: 600;
+	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.04em;
@@ -184,14 +182,13 @@ h2 {
 }
 .button:hover,
 .button:focus {
-	color: #fff;
-	background-color: #4d5ae5;
+	color: var(--white-color);
+	background-color: var(--brand-color);
 }
 
 /* Options */
 .options-item {
-	font-style: normal;
-	font-weight: 600;
+	font-weight: 500;
 	font-size: 20px;
 	line-height: 1.2;
 	letter-spacing: 0.02em;
