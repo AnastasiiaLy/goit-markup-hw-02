@@ -86,6 +86,7 @@ body {
 /* Order button */
 .order-button {
 	border: none;
+	font-family: "Roboto";
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.2;
@@ -172,6 +173,7 @@ body {
 .button {
 	border: 1px solid var(--accent-color);
 	background-color: var(--background-color);
+	font-family: "Roboto";
 	color: inherit;
 	font-family: "Roboto";
 	font-weight: 500;
